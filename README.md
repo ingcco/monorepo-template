@@ -93,5 +93,5 @@ ex) main -> feature/branch 생성 -> main merge -> main to prod/crechat
 
 ## ref
 
-[모노레포 전략 참고](https://klleon.atlassian.net/wiki/spaces/TC/pages/270041123)  
-[다국어 전략 참고](https://klleon.atlassian.net/wiki/spaces/TC/pages/249167985/02.)
+[모노레포 전략 참고](./MonorepoStrategy.md)  
+[다국어 전략 참고](./i18n.md)
