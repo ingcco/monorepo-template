@@ -1,0 +1,21 @@
+{
+  "extends": ["../../configs/tsconfig/tsconfig.base.json"],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@/components/*": ["src/components/*"],
+      "@/assets/*": ["src/assets/*"],
+      "@/constants/*": ["src/constants/*"],
+      "@/statics/*": ["src/statics/*"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@/api/*": ["src/app/api/*"],
+      "@/styles/*": ["src/styles/*"],
+      "@/utils/*": ["src/utils/*"]
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

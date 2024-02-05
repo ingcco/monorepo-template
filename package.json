@@ -1,0 +1,50 @@
+{
+  "name": "monorepo-temp",
+  "packageManager": "yarn@4.0.2",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react",
+      "**/react-dom",
+      "**/react-router-dom",
+      "**/react-router",
+      "**/react-router-config",
+      "**/react-router-dom"
+    ]
+  },
+  "scripts": {
+    "temp-a:dev": "yarn workspace temp-a dev",
+    "temp-b:dev": "yarn workspace temp-b dev",
+    "component:build-svg": "yarn workspace @common/components build-svg",
+    "lint": "eslint ./apps ./packages --ext .ts,.tsx,.js,.jsx --fix",
+    "postinstall": "husky install"
+  },
+  "devDependencies": {
+    "@emotion/eslint-plugin": "^11.11.0",
+    "@tanstack/eslint-plugin-query": "^5.12.1",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-node": "^0.3.9",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.7",
+    "vite-plugin-svgr": "^4.2.0"
+  }
+}
